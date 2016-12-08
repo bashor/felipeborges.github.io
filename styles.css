@@ -62,7 +62,6 @@ a:hover small {
 header {
   width: 270px;
   position: fixed;
-  -webkit-font-smoothing:subpixel-antialiased;
 }
 
 header ul {
