@@ -27,7 +27,7 @@
         font: 14px/1.5 Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
         color :#727272;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
       }
 
       h1, h2, h3, h4, h5, h6 {
@@ -80,6 +80,7 @@
       .wrapper {
         width: 860px;
         margin: 0 auto;
+        font-size: 125%;
       }
 
       header {
@@ -97,6 +98,41 @@
         padding-bottom: 50px;
       }
 
+      /* For screens widths smaller than 860px */
+      @media screen and (max-width: 860px) {
+        body {
+          padding: 5px;
+        }
+
+        .wrapper {
+          max-width: 100%;
+        }
+
+        header {
+          position: relative;
+          width: 100%;
+        }
+
+        header ul {
+          padding: 0;
+        }
+
+        header li {
+          display: inline;
+          padding-right: 3%;
+        }
+
+        section {
+          width: 100%;
+          float: none;
+        }
+
+        .avatar,
+        .bio {
+          display: none;
+        }
+      }
+
       .avatar {
         border-radius: 50%;
         border: 1px solid #ccc;
@@ -105,8 +141,8 @@
       }
 
       .bio {
-        font-size: 18px;
         width: 80%;
+        font-size: 90%;
       }
 
       .bio a {
